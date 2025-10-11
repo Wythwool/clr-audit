@@ -12,7 +12,3 @@ dotnet build -c Release
 ```bash
 dotnet run -c Release -- audit path/to/dir_or_dll [-r] --json-out out.json --sarif-out out.sarif
 ```
-
-## Notes
-- Works on .dll/.exe. Follows refs loosely (no full resolve needed).
-- SARIF: minimal 2.1.0, rule ids `R_ASM_LOAD`, `R_PINVOKE`, `R_PROC_START`, `R_BINFORMATTER`, `R_REF_EMIT`, `R_CALLI`.
