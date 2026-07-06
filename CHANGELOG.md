@@ -8,3 +8,4 @@
 - Added `--recursive`, `--fail-on`, `--version`, and structured exit behavior.
 - Added nested type scanning and more IL checks for loaders, P/Invoke, process creation, binary serialization, dynamic code, native marshaling, network fetches, URL literals, encoded strings, and executable-looking resources.
 - Added generated sample-assembly tests and CI on Windows and Linux.
+- Added .NET tool packaging metadata and CI package build.

@@ -21,6 +21,8 @@ The tool reads assemblies as files only. It does not execute target code.
 
 ```bash
 dotnet build src/clr-audit.csproj -c Release
+dotnet pack src/clr-audit.csproj -c Release -o artifacts/package
+dotnet tool install --global clr-audit --add-source artifacts/package
 ```
 
 ## Run

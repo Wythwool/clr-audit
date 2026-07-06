@@ -20,5 +20,7 @@ jobs:
         run: dotnet restore src/clr-audit.csproj
       - name: Build
         run: dotnet build src/clr-audit.csproj -c Release --no-restore
+      - name: Pack
+        run: dotnet pack src/clr-audit.csproj -c Release --no-build -o artifacts/package
       - name: Test
         run: python tests/run_tests.py

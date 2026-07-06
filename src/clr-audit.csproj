@@ -9,11 +9,22 @@
     <Version>0.2.0</Version>
     <Authors>Mono GlaShyiz</Authors>
     <Description>.NET IL auditor for risky loader, native interop, process, serialization, and dynamic code patterns.</Description>
+    <PackageId>clr-audit</PackageId>
+    <PackageTags>security;dotnet;il;analysis;reverse-engineering</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Wythwool/clr-audit</RepositoryUrl>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>clr-audit</ToolCommandName>
     <Deterministic>true</Deterministic>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <AnalysisLevel>latest</AnalysisLevel>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Mono.Cecil" Version="0.11.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
