@@ -4,6 +4,14 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>clr-audit</AssemblyName>
+    <RootNamespace>ClrAudit</RootNamespace>
+    <Version>0.2.0</Version>
+    <Authors>Mono GlaShyiz</Authors>
+    <Description>.NET IL auditor for risky loader, native interop, process, serialization, and dynamic code patterns.</Description>
+    <Deterministic>true</Deterministic>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AnalysisLevel>latest</AnalysisLevel>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Mono.Cecil" Version="0.11.5" />
